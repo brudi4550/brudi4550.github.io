@@ -1,13 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <p>Personal website Alexander Wolf</p>
-  </body>
+    <title>Alexander Wolf</title>
+    <link rel="shortcut icon" href="./assets/images/image1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img class="profile-picture" src="./assets/images/image1.jpg" alt="Alexander Wolf" width="80">
+                </figure>
+                <div class="info-content">
+                    <h1 class="name" title="Alexander Wolf">Alexander Wolf</h1>
+                    <p class="title">Student Researcher</p>
+                </div>
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+            <div class="sidebar-info_more">
+                <div class="separator"></div>
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Work</p>
+                            <a href="mailto:alexander.wolf@jku.at" class="contact-link">alexander.wolf@jku.at</a>
+                            <p class="contact-title">Personal</p>
+                            <a href="mailto:alexanderwolf@outlook.at" class="contact-link">alexanderwolf@outlook.at</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+                            <time datetime="1998-26-03">March 26, 1998</time>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Linz, Upper Austria, Austria</address>
+                        </div>
+                    </li>
+                </ul>
+                <div class="separator"></div>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://stackoverflow.com/users/13034776/brudi4550" class="social-link">
+                            <ion-icon name="logo-stackoverflow"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://github.com/brudi4550" class="social-link">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://se.jku.at/alexander-wolf/" class="social-link">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="main-content">
+            <article class="about  active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+                <section class="about-text">
+                    <p>
+                        I'm a student researcher at the
+                        <a class="aboutme-link custom-link" href="https://se.jku.at/">
+                            <nobr><ion-icon class="custom-ion" name="chevron-forward-outline"></ion-icon> Institute for
+                                Software Engineering at JKU</nobr>
+                        </a>
+                        and currently working on the
+                        <a class="aboutme-link custom-link" href="https://projekte.ffg.at/projekt/4348689">
+                            <nobr><ion-icon class="custom-ion" name="chevron-forward-outline"></ion-icon>
+                                EPILEPSIA</nobr>
+                        </a>
+                        project.
+                        Currently I'm pursuing my
+                        masters degree in Business Informatics with a focus on Artificial Intelligence.
+                    </p>
+                </section>
+                <section class="service">
+                    <h3 class="h3 service-title">Previous Work</h3>
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img class="custom-svg" src="./assets/images/document-outline.svg" alt="document icon"
+                                    width="40">
+                            </div>
+                            <div class="service-content-box">
+                                <a class="custom-link" href="./assets/documents/Bachelorarbeit_Alexander_Wolf.pdf">
+                                    <h4 class="custom-item-title service-item-title">Bachelor Thesis</h4>
+                                </a>
+                                <p class="service-item-text">
+                                    Architectures and frameworks for developing web-based integrated development
+                                    environments.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img class="custom-svg" src="./assets/images/document-outline.svg" alt="camera icon"
+                                    width="40">
+                            </div>
+                            <div class="service-content-box">
+                                <a class="custom-link" href="./assets/documents/PS_CE_Paper_Alexander_Wolf.pdf">
+                                    <h4 class="custom-item-title service-item-title">REST vs. GraphQL</h4>
+                                </a>
+                                <p class="service-item-text">
+                                    A paper outlining pros and cons of the two architecture styles when applied in
+                                    different use cases.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Education</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Stiftsgymnasium Kremsmünster</h4>
+                            <span>2008 - 2016</span>
+                            <p class="timeline-text">
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Bachelorstudium Wirtschaftsinformatik JKU</h4>
+                            <span>2019 - 2022</span>
+                            <p class="timeline-text">
+                                Degree earned on a merit based scholarship in 2021 and 2022.
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Masterstudium Wirtschaftsinformatik JKU</h4>
+                            <span>2022 - present</span>
+                            <p class="timeline-text">
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Experience</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Student Tutor</h4>
+                            <span>2021 - 2022</span>
+                            <p class="timeline-text">
+                                Employment at the Institute for Telecooperation. Tutor for the Software Development 2
+                                course at JKU.
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Student Researcher</h4>
+                            <span>2023 - present</span>
+                            <p class="timeline-text">
+                                Working on app development and data collection in the Neurology Department at Med Campus
+                                IV in the context of the
+                                <a class="aboutme-link custom-link" href="https://projekte.ffg.at/projekt/4348689">
+                                    <nobr><ion-icon class="custom-ion" name="chevron-forward-outline"></ion-icon>
+                                        EPILEPSIA</nobr>
+                                </a>
+                                Project.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
